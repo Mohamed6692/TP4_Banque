@@ -1,2 +1,5 @@
 com/mohamed/tpbanquemohamed/JakartaRestConfiguration.class
+BanqueManager.class
+GestionnaireCompte.class
+com/mohamed/tpbanquemohamed/entity/CompteBancaire.class
 com/mohamed/tpbanquemohamed/resources/JakartaEE10Resource.class
