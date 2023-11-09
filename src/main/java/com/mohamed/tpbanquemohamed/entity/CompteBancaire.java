@@ -10,10 +10,11 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import java.io.Serializable;
 
-/**
- *
- * @author MOHAMED
+/*
+ * Cette classe représente un compte bancaire avec des propriétés telles que l'identifiant, le nom du titulaire et le solde.
+ * Elle fournit des méthodes pour déposer et retirer de l'argent, ainsi que des méthodes de base pour la gestion du compte.
  */
+
 @Entity
 public class CompteBancaire implements Serializable {
 
@@ -21,63 +22,50 @@ public class CompteBancaire implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String nom ;
 
-    public static long getSerialVersionUID() {
-        return serialVersionUID;
+    private String nom;
+
+    private int solde;
+
+    public CompteBancaire() {
+    }
+
+    public CompteBancaire(String nom, int solde) {
+        this.nom = nom;
+        this.solde = solde;
+    }
+
+    public Long getId() {
+        return id;
     }
 
     public String getNom() {
         return nom;
     }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
-
     public void setNom(String nom) {
         this.nom = nom;
+    }
+
+    public int getSolde() {
+        return solde;
     }
 
     public void setSolde(int solde) {
         this.solde = solde;
     }
 
-    public int getSolde() {
-        return solde;
-    }
-    private int solde ;
-    private String string;
-    
-    
-
-    /**
-     * Get the value of string
-     *
-     * @return the value of string
-     */
-    public String getString() {
-        return string;
+    public void deposer(int montant) {
+        solde += montant;
     }
 
-    /**
-     * Set the value of string
-     *
-     * @param string new value of string
-     */
-    public void setString(String string) {
-        this.string = string;
+    public void retirer(int montant) {
+        if (montant < solde) {
+            solde -= montant;
+        } else {
+            solde = 0;
+        }
     }
-
-
-    public Long getId() {
-        return id;
-    }
-
-    /*
-    public void setId(Long id) {
-        this.id = id;
-    }*/
 
     @Override
     public int hashCode() {
@@ -99,28 +87,6 @@ public class CompteBancaire implements Serializable {
         return true;
     }
 
-    public CompteBancaire(String nom, int solde) {
-        this.nom = nom;
-        this.solde = solde;
-    }
-    
-    public CompteBancaire(Long id, String nom, int solde) {
-        this.id = id;
-        this.nom = nom;
-        this.solde = solde;
-    }
-
-    public void deposer(int montant) {
-        solde += montant;
-    }
-
-    public void retirer(int montant) {
-        if (montant < solde) {
-            solde -= montant;
-        } else {
-            solde = 0;
-        }
-    }
     @Override
     public String toString() {
         return "com.mohamed.tpbanquemohamed.entity.CompteBancaire[ id=" + id + " ]";
