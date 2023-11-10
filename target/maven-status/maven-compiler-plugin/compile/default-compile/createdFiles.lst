@@ -10,3 +10,4 @@ com/mohamed/tpbanquemohamed/resources/JakartaEE10Resource.class
 com/mohamed/tpbanquemohamed/entity/jsf/AjoutCompte.class
 com/mohamed/tpbanquemohamed/entity/jsf/Mouvement.class
 com/mohamed/tpbanquemohamed/util/Util.class
+com/mohamed/tpbanquemohamed/entity/OperationBancaire.class

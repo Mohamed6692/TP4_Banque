@@ -30,6 +30,7 @@ public class Init {
             gestionnaireCompte.creerCompte(new CompteBancaire("Paul McCartney", 950000));
             gestionnaireCompte.creerCompte(new CompteBancaire("Ringo Starr", 20000));
             gestionnaireCompte.creerCompte(new CompteBancaire("George Harrison", 100000));
+            gestionnaireCompte.creerCompte(new CompteBancaire("Mohamed", 70000000));
         }
     }
 }

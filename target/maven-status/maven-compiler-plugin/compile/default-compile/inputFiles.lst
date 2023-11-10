@@ -1,12 +1,13 @@
 /Users/MOHAMED/Documents/TPBanqueMohamed/src/main/java/com/mohamed/tpbanquemohamed/config/ConfigJSF.java
-/Users/MOHAMED/Documents/TPBanqueMohamed/src/main/java/com/mohamed/tpbanquemohamed/config/Init.java
-/Users/MOHAMED/Documents/TPBanqueMohamed/src/main/java/com/mohamed/tpbanquemohamed/entity/CompteBancaire.java
 /Users/MOHAMED/Documents/TPBanqueMohamed/src/main/java/com/mohamed/tpbanquemohamed/JakartaRestConfiguration.java
 /Users/MOHAMED/Documents/TPBanqueMohamed/src/main/java/com/mohamed/tpbanquemohamed/entity/jsf/ListeComptes.java
-/Users/MOHAMED/Documents/TPBanqueMohamed/src/main/java/com/mohamed/tpbanquemohamed/resources/JakartaEE10Resource.java
 /Users/MOHAMED/Documents/TPBanqueMohamed/src/main/java/com/mohamed/tpbanquemohamed/entity/jsf/Transfert.java
+/Users/MOHAMED/Documents/TPBanqueMohamed/src/main/java/com/mohamed/tpbanquemohamed/entity/OperationBancaire.java
 /Users/MOHAMED/Documents/TPBanqueMohamed/src/main/java/com/mohamed/tpbanquemohamed/util/Util.java
-/Users/MOHAMED/Documents/TPBanqueMohamed/src/main/java/com/mohamed/tpbanquemohamed/entity/jsf/Mouvement.java
 /Users/MOHAMED/Documents/TPBanqueMohamed/src/main/java/com/mohamed/tpbanquemohamed/service/GestionnaireCompte.java
 /Users/MOHAMED/Documents/TPBanqueMohamed/src/main/java/com/mohamed/tpbanquemohamed/entity/jsf/Modifier.java
 /Users/MOHAMED/Documents/TPBanqueMohamed/src/main/java/com/mohamed/tpbanquemohamed/entity/jsf/AjoutCompte.java
+/Users/MOHAMED/Documents/TPBanqueMohamed/src/main/java/com/mohamed/tpbanquemohamed/config/Init.java
+/Users/MOHAMED/Documents/TPBanqueMohamed/src/main/java/com/mohamed/tpbanquemohamed/entity/CompteBancaire.java
+/Users/MOHAMED/Documents/TPBanqueMohamed/src/main/java/com/mohamed/tpbanquemohamed/resources/JakartaEE10Resource.java
+/Users/MOHAMED/Documents/TPBanqueMohamed/src/main/java/com/mohamed/tpbanquemohamed/entity/jsf/Mouvement.java
