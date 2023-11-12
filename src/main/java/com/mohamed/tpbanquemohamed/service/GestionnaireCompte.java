@@ -4,6 +4,7 @@
  */
 package com.mohamed.tpbanquemohamed.service;
 import com.mohamed.tpbanquemohamed.entity.CompteBancaire;
+import com.mohamed.tpbanquemohamed.entity.OperationBancaire;
 import jakarta.annotation.sql.DataSourceDefinition;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Named;
@@ -54,6 +55,15 @@ public class GestionnaireCompte {
 
     public CompteBancaire getCompte(long id) {
         return em.find(CompteBancaire.class, id);
+    }
+    
+        public OperationBancaire findById(long id) {
+        return em.find(OperationBancaire.class, id);
+    }
+        
+    @Transactional
+    public void persist(OperationBancaire operationBancaire) {
+        em.persist(operationBancaire);
     }
 
     public List<CompteBancaire> getAllComptes() {

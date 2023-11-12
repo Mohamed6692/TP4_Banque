@@ -18,7 +18,7 @@
 
                     <p:dataTable value="#{listeComptes.allComptes}" widgetVar="comptesTable" emptyMessage="Aucun compte avec ce critère" var="item" paginator="true" rows="10">
                         <!-- Tableau de données PrimeFaces pour afficher la liste des comptes -->
-                        
+
                         <p:column>
                             <!-- Colonne pour l'ID -->
                             <f:facet name="header">
@@ -27,7 +27,7 @@
                             <h:link outcome="mouvement?id=#{item.id}" value="#{item.id}"/>
                             <!-- Lien vers une page de détails en utilisant l'ID du compte -->
                         </p:column>
-                        
+
                         <p:column sortBy="#{item.nom}">
                             <!-- Colonne pour le nom -->
                             <f:facet name="header">
@@ -35,7 +35,7 @@
                             </f:facet>
                             <h:outputText value="#{item.nom}"/>
                         </p:column>
-                        
+
                         <p:column sortBy="#{item.solde}">
                             <!-- Colonne pour le solde -->
                             <f:facet name="header">
@@ -43,7 +43,7 @@
                             </f:facet>
                             <h:outputText value="#{item.solde}"/>
                         </p:column>
-                        
+
                         <p:column>
                             <!-- Colonne pour les opérations -->
                             <f:facet name="header">
@@ -55,6 +55,18 @@
                             <!-- CommandLink pour supprimer un compte -->
                             <h:link outcome="modifier?id=#{item.id}" value="Modifier"/>
                             <!-- Lien pour modifier un compte en utilisant l'ID du compte -->
+                        </p:column>
+
+                        <p:column>
+                            <!-- Colonne pour l'historique des opérations -->
+                            <f:facet name="header">
+                                <h:outputText value="Historique opérations"/>
+                            </f:facet>
+                            <h:link outcome="operation.xhtml">
+                                <!-- Lien vers la page d'opérations, le détail sera configuré avec l'ID du compte -->
+                                <f:param name="id" value="#{item.id}"/>
+                                <h:outputText value="Détails"/>
+                            </h:link>
                         </p:column>
                     </p:dataTable>
                 </h:form>
